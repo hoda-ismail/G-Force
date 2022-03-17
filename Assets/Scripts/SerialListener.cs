@@ -11,10 +11,13 @@ using System.Collections.Generic;
 using AirResistance;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
+using UnityEngine.UI;
+
 public class SerialListener : MonoBehaviour
 {
     private BallPhysics ballPhysics;
     public bool kicked = false;
+    public Button restartButton;
 
     void Start() // Start is called before the first frame update
     {
@@ -31,6 +34,7 @@ public class SerialListener : MonoBehaviour
         {
             ballPhysics.KickBall();
             kicked = true;
+            restartButton.interactable = true;
         }
             
         Debug.Log(msg);

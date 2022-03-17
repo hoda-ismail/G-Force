@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Mars.unity
     guid: 497d36baba4b4804b86e0b939ae993a7
   - enabled: 1
-    path: Assets/Scenes/Wormhole_FX/Wormhole_FX.unity
+    path: Assets/Scenes/Wormhole_FX.unity
     guid: 3112b16f311cb2b4aa7fbb656ca080f8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1b12bd3cb17693649b40b038bf3614d8, type: 2}

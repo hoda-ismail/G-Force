@@ -24,6 +24,7 @@ public class BallPhysics : MonoBehaviour
     
     public Transform ball;
     public Transform ballStand;
+
     public double ballDistanceFromStand;
     public float mass;
     
@@ -32,7 +33,6 @@ public class BallPhysics : MonoBehaviour
     public float force;
     public float controllerSpeed;
     public double ballSpeed;
-
 
     public Text forceText;
     public Text ballSpeedText;
@@ -60,10 +60,6 @@ public class BallPhysics : MonoBehaviour
     
     void Update() // Update is called once per frame
     {
-
-
-        
-
         ballSpeed = Math.Round(ballBody.velocity.magnitude, 2);
         ballSpeedText.text = ballSpeed.ToString();
 

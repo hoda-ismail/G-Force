@@ -1,0 +1,2 @@
+C:\Users\Hoda Ismail\Documents\GitHub\G-Force\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Users\Hoda Ismail\Documents\GitHub\G-Force\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
