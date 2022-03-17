@@ -53,6 +53,8 @@
     <UnityVersion>2020.3.26f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\Scripts\DottedOutline.cs" />
     <Compile Include="Assets\Wormhole_FX\Scripts\Wormhole.cs" />
     <Compile Include="Assets\Ardity\Scripts\Threads\AbstractSerialThread.cs" />
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleCustomDelimiter.cs" />
@@ -75,12 +77,21 @@
     <Compile Include="Assets\Ardity\Scripts\SerialControllerCustomDelimiter.cs" />
     <Compile Include="Assets\Scripts\ResetBallPosition.cs" />
     <Compile Include="Assets\Scripts\KickBall.cs" />
-    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
-    <Compile Include="Assets\Scripts\dottedOutline.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Pose\Pose.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Pose\PoseContainer.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Utility\Extensions.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Hands\Support\HandInfo.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Pose\PoseHelper\HandManager.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Hands\BaseHand.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Hands\GameplayHand.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Hands\Support\HandType.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Pose\PoseHelper\SelectionHandler.cs" />
+    <Compile Include="Assets\_HandPoser\Scripts\Hands\PreviewHand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Wormhole_FX\Wormhole_FX - Documentation.txt" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
+    <None Include="Assets\_HandPoser\README.txt" />
     <None Include="Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
   </ItemGroup>
