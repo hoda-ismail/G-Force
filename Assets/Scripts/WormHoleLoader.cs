@@ -17,14 +17,14 @@ public class WormHoleLoader : XRGrabInteractable
     private void Start()
     {
         ballSerialListener = ball.GetComponent<SerialListener>();
-        dottedOutline = ball.GetComponent<DottedOutline>();
+        dottedOutline = GetComponent<DottedOutline>();
     }
 
     protected override void OnHoverEntered(HoverEnterEventArgs args)
     {
         base.OnHoverEntered(args);
         dottedOutline.isDotted = true;
-        dottedOutline.lineWidth = 0.03f;
+        dottedOutline.lineWidth = 0.07f;
 
     }
 
@@ -38,7 +38,7 @@ public class WormHoleLoader : XRGrabInteractable
     {
 
         dottedOutline.isDotted = false;
-        dottedOutline.lineWidth = 0.03f;
+        dottedOutline.lineWidth = 0.07f;
 
         if (ballSerialListener.kicked)
         {

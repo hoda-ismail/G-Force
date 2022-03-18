@@ -30,7 +30,7 @@ public class SerialListener : MonoBehaviour
         //For testing with Arduino data
         int detected = int.Parse(msg);
         
-        if (detected == 5 && kicked == false)
+        if ( (detected == 6 || detected == 5) && kicked == false)
         {
             ballPhysics.KickBall();
             kicked = true;

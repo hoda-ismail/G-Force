@@ -24,10 +24,15 @@ public class ResetBallPosition : MonoBehaviour
 
     public void ResetBallToStand()
     {
+        
         ballTrailRenderer.Clear();
-        ballRigidBody.velocity = Vector3.zero;
         ballRigidBody.transform.right = Vector3.zero;
         ball.position = startPos;
+        
+        ballRigidBody.AddForce(Vector3.zero);
+        ballRigidBody.velocity = Vector3.zero;
+        ballRigidBody.AddTorque(Vector3.zero);
+        
         ballSerialListener.kicked = false;
     }
 }
