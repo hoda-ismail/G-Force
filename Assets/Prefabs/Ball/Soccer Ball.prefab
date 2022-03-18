@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kicked: 0
+  kickedOnce: 0
   restartButton: {fileID: 0}
 --- !u!96 &1975455282074909
 TrailRenderer:

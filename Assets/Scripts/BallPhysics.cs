@@ -42,6 +42,7 @@ public class BallPhysics : MonoBehaviour
 
     public InputActionProperty triggerProperty;
 
+
     
     void Start() // Start is called before the first frame update
     {
@@ -104,7 +105,7 @@ public class BallPhysics : MonoBehaviour
     {
         ballKicking.Play();
         controllerSpeed = velocityProperty.action.ReadValue<Vector3>().magnitude;
-        force = controllerSpeed * mass * 10;
+        force = controllerSpeed * mass * 5;
         force = (float)Math.Round(force, 2);
         forceText.text = force.ToString();
 

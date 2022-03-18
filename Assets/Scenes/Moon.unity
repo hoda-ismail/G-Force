@@ -555,7 +555,7 @@ PrefabInstance:
     - target: {fileID: 492641215811947693, guid: 2068487bf468dc5488861edb1c98dc1e, type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1590555208}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2068487bf468dc5488861edb1c98dc1e, type: 3}
 --- !u!1 &1121149663
@@ -1211,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1975455282074910, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
       propertyPath: gravity
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1975455282074910, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
       propertyPath: ForceText
@@ -1228,7 +1228,7 @@ PrefabInstance:
     - target: {fileID: 1975455282074910, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
       propertyPath: forceText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 974236185}
     - target: {fileID: 1975455282074910, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
       propertyPath: ballKicking
       value: 
@@ -1240,11 +1240,11 @@ PrefabInstance:
     - target: {fileID: 1975455282074910, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
       propertyPath: distanceText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1206332547}
     - target: {fileID: 1975455282074910, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
       propertyPath: ballSpeedText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1165565505}
     - target: {fileID: 1975455282074910, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
       propertyPath: AccelerationText
       value: 
@@ -1347,6 +1347,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
+--- !u!4 &1590555208 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5728195505854200002, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
+  m_PrefabInstance: {fileID: 1590555207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1590555209 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1975455282074911, guid: d4405040ad76d114b91fe57fda77369c, type: 3}
+  m_PrefabInstance: {fileID: 1590555207}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4c2b77365d8b84b901a5ec1146b84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1772823076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1437,7 @@ PrefabInstance:
     - target: {fileID: 8442293814264768321, guid: b0aa11034823125409c9709db3eaf836, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1590555209}
     - target: {fileID: 8442293814264768321, guid: b0aa11034823125409c9709db3eaf836, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ResetBallToStand

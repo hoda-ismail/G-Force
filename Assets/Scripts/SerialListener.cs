@@ -17,6 +17,7 @@ public class SerialListener : MonoBehaviour
 {
     private BallPhysics ballPhysics;
     public bool kicked = false;
+    public bool kickedOnce = false;
     public Button restartButton;
 
     void Start() // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class SerialListener : MonoBehaviour
         {
             ballPhysics.KickBall();
             kicked = true;
+            kickedOnce = true;
             restartButton.interactable = true;
         }
             

@@ -25,14 +25,12 @@ public class WormHoleLoader : XRGrabInteractable
         base.OnHoverEntered(args);
         dottedOutline.isDotted = true;
         dottedOutline.lineWidth = 0.07f;
-
     }
 
     protected override void OnHoverExited(HoverExitEventArgs args)
     {
         base.OnHoverExited(args);
         dottedOutline.lineWidth = 0f;
-
     }
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
@@ -40,9 +38,8 @@ public class WormHoleLoader : XRGrabInteractable
         dottedOutline.isDotted = false;
         dottedOutline.lineWidth = 0.07f;
 
-        if (ballSerialListener.kicked)
+        if (ballSerialListener.kickedOnce)
         {
-            ballSerialListener.kicked = false;
             NextLevel = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadScene(wormHoleSceneIndex);
         }
